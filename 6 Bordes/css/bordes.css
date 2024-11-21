@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*la propiedad boder es un shorthands
+compuesto por border: width style color
+
+de una manera mas larga podemos utilizar las prpiedades
+border-width: top rigth bottom left;
+border-style: top rigth bottom left;
+border-color: top rigth bottom left;
+*/
+
+.box {
+  background: orange;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}

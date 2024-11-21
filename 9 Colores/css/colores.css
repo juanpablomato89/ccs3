@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+La propiedad color le da color a los textos en CCS
+*/
+.header {
+  padding: 45px 0;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+.title {
+  text-align: center;
+}

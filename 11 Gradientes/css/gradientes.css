@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Gradiente es la transicion de un color a otro con cierta difuminacion*/
+.container {
+  width: 80%;
+  height: 400px;
+  margin: 30px auto;
+  background: steelblue;
+  /*La sintaxis es la siguiente background-image: linear-gradient(direccion color stop, color stop );
+  los valores de direccion son: to top/ to bottom/ to left/ to right
+  Los valores del stop: se da en % y significa donde parara la transicion
+  */
+  background-image: linear-gradient(crimson, steelblue);
+}
+
+.header {
+  height: 600px;
+  padding: 0.1px;
+  /*Con esta variante logramos un degradado de colores con un 50% de transparencia que
+  permite ver por detras una imagen de fondo*/
+  background-image: linear-gradient(#584c3c81, #a47a448b),
+    url(../img/imagen.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 270px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}

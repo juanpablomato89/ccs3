@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Especificidad*/
+/*Los valores van a 1 hasta 1000*/
+/*
+1000: los elementos en linea, eso es cuando ponemos la etiqueta style en el codigo html
+100: es para los selectores que tengan un ID. cuando creamos estilos y lo aplicamos a partir del ID
+      de los elementos.
+10: para los selectores de clases y de de atributos.
+1: para los selectores de elementos.
+*/
+
+/*Con la palabra reservada inherit se heredan las propiedades del elemento padre*/
+/*Con la palabra initial se evita que el elemento hijo herede las propiedades del padre*/

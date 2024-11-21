@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+/*Colapso de margenes*/
+/*para evitar el colapso de margenes se recomienda dar un pequeno padding de 0.1px al elemento
+padre para que el margin top del elemento hijo funcione*/
+/*Tambien puede funcionar con el border: 1 solid transparent*/
+.box1 {
+  width: 100%;
+  background-color: steelblue;
+  margin-bottom: 50px;
+  padding: 0.1px;
+  /*border: 1px solid transparent;*/
+}
+
+.header {
+  background-color: gold;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.box2 {
+  background-color: tomato;
+}

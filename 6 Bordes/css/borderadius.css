@@ -1,0 +1,47 @@
+.card {
+  margin: 20px auto;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.cta {
+  display: block;
+  width: 150px;
+  background: crimson;
+  border-radius: 3px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 20px auto;
+}
+
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.img {
+  /*tenemos que hacer la imagen un elemento de bloque y asignarle un width para poder centrarla*/
+  display: block;
+  width: 200px;
+  height: 200px;
+  /*Esta propiedad es para que la imagen no pierda calidad*/
+  object-fit: cover;
+  margin: 20px auto;
+  /*border: 10px groove brown;*/
+
+  /*permite redondiar las esquinas de una caja*/
+  border-radius: 50%;
+
+  /*
+  Estas son las otras propiedades en las que se puede desmenuzar el short hands border-radius
+  border-top-left-radius: ;
+  border-top-right-radius: ;
+  border-bottom-right-radius: ;
+  border-bottom-left-radius: ;
+
+  si deseas hacer un circulo basta por poner en la propiedad border-radius:50% pero 
+  es importante que la imagen se un cuadrado por lo que el width y el height deben ser iguales
+  */
+}

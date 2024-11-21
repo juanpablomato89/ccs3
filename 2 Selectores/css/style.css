@@ -1,0 +1,47 @@
+h2 {
+  color: blue;
+}
+
+nav.alex {
+  border: 1px solid blue;
+}
+
+.titulo {
+  text-align: center;
+  color: tomato;
+}
+
+#section {
+  border: 1px solid blue;
+}
+
+.emoji {
+  border: 1px solid black;
+}
+
+/*Selectores de atributo*/
+/*Va a seleccionar a los elementos que tienen el atributo href*/
+[href] {
+  text-decoration: none;
+}
+
+/*va a seleccionar los elementos que su href se igual a https://uci.cu*/
+[href="https://uci.cu"]
+{
+  color: red;
+}
+
+/*Selecciona todos los elementos que el atributo href comienza con hsttps*/
+[href^="hsttps"] {
+  color: black;
+}
+
+/*Selecciona todos los elementos que el atributo href termina con org*/
+[href$="org"] {
+  color: orange;
+}
+
+/*Selecciona todos los elementos que el atributo href contiene la palabra google*/
+[href*="google"] {
+  color: green;
+}

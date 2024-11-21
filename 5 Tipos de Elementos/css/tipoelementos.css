@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.enlaces {
+  display: inline-block;
+  text-decoration: none;
+  background: crimson;
+  color: white;
+  padding: 30px 20px;
+}
+
+/*En css la propiedad display define si un elementos va a ser en linea o en bloque*/
+/*por defecto su valor es display: inline o elemento en linea*/
+/*display: block convierte el elemento de linea en un elemento de bloque*/
+/*display: inline-block los elementos siguen siendo de linea pero podemos hacer uso de las 
+propiedades de un elemento en bloque*/
+/*A los elementos en linea no se le puede definir un width o un height*/
+/*Para centrar un elemento con margin: 0 auto es importante tener en cuenta que
+el elemento tiene que ser de bloque y tener un widht*/
+
+.block {
+  display: none;
+}
+
+/*display: none saca al elemento del flujo */

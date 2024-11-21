@@ -1,0 +1,43 @@
+/*para seleccionar varios elementos
+lo separamos por coma
+h2,
+a,
+p {
+  color: indigo;
+}*/
+
+/*Ejercicio No1: Dar a todos los elementos
+h un font-zise y una fuente igual*/
+h2,
+h3 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serifS;
+}
+
+/*Selector de descendencia se separa por 
+un espacio el elemento padre del elemento hijo*/
+/*Quita el subrayado y le da el color firebrick a los elementos a que
+ estan dentro de la clase contenedor*/
+.contenedor a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+/*Selector hijo directo se separa por 
+el signo de mayor que (>) el elemento padre del elemento hijo*/
+.contenedor > a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Selector de hermano adyacente se separa por el sigo de (+)*/
+/*Selecciona al elemento parrafo que esta adyacente al elemento h2*/
+h2 + p {
+  color: gold;
+}
+
+/*Selector de hermanos adyacente se separa por el sigo de (~)*/
+/*Agrega un color red a todos los elementos p que estan despues de un h3 y sean hermanos*/
+h3 ~ p {
+  color: red;
+}

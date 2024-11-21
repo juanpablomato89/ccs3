@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #9ab1f6;
+  font-family: cursive;
+}
+
+.container {
+  background: #fff;
+  width: 70%;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.copy {
+  /*Da alineacion del texto*/
+  text-align: justify;
+  padding: 10px 0;
+
+  /*modifica el espacio entre letras de un parrafo*/
+  /*letter-spacing: 1px;*/
+
+  /*modifica el espacio entre palabras*/
+  /*word-spacing: -50px;*/
+  /*Define la zombra de un texto*/
+
+  /*Dar sombra al texto*/
+  /*text-shadow: 3px 3px 6px red;*/
+
+  /*se utiliza para transformar el texto a mayuscula, minuscula*/
+  /*text-transform: uppercase;*/
+
+  /*Define la altura de cada linea de texto*/
+  /*line-height: normal;*/
+
+  /*FONT es un shorthands*/
+}
+
+.enlace {
+  display: inline-block;
+  text-align: center;
+  color: crimson;
+
+  /*
+  es uns shorthands
+  subraya las etiquetas a, esta compuesto por las propiedades line, style y el color*/
+  /*text-decoration: line style color;*/
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px 25px;
+}
+
+.bold {
+  color: crimson;
+  font-variant: small-caps;
+  font-weight: bold;
+  /*tamano de la fuente*/
+  font-size: 16px;
+  font-style: italic;
+}
+
+.card {
+  background-image: linear-gradient(#2a255fcc, #2a255fcc),
+    url(../img/imagen.jpg);
+  font-family: "Raleway", sans-serif;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  color: #fff;
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.title-card {
+  font-size: 30px;
+  border-bottom: 3px solid #fff;
+  padding: 7px;
+  margin-bottom: 30px;
+}
+
+.text-card {
+  font-weight: 300;
+  margin-bottom: 15px;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.bold-card {
+  font-weight: bold;
+}
+
+.cta-card {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 15px 25px;
+  border-radius: 3px;
+}
