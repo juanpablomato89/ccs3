@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.section1 {
+  background-image: url(../img/img4.jpg);
+  padding: 0.1rem;
+}
+
+.section1 h2 {
+  background: #000;
+  color: #fff;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  /*para centrar el texto horizontalmente*/
+  text-align: center;
+  /*para centrar el texto verticalmente, pero los pixeles tienen que ser igual 
+  al definido en el height*/
+  line-height: 100px;
+  /*para centrar el h2 utilizamos la funcion calc. el primer valor es la mitad del contenedor padre
+  que tiene 100vh y el segundo valor es la mitad de su height que es de 100px
+  y el segundo valor */
+  margin-top: calc(50vh - 50px);
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.text p {
+  padding: 20px 0;
+}
+
+.section2 {
+  height: 600px;
+  background-image: url(../img/img6.jpg);
+}
+
+.section2 h3 {
+  /*para centrar el texto horizontalmente*/
+  text-align: center;
+
+  /*para centrar el texto verticalmente, pero los pixeles tienen que ser igual 
+  al definido en el height del contenedor*/
+  line-height: 600px;
+
+  /*para centrar el h2 utilizamos la funcion calc. el primer valor es la mitad del contenedor padre
+  que tiene 100vh y el segundo valor es la mitad de su height que es de 100px
+  y el segundo valor */
+  margin-top: calc(50vh - 300px);
+}
+
+.background h3 {
+  /*para el empleo de la unidad de medida rem es importante recordar cual es el tamano por
+  defecto del font-zise del navegador que por defectoes de 16px * 4rem =  64px*/
+  font-size: 4rem;
+}
+
+.section3 {
+  height: 600px;
+  background-image: url(../img/img1.jpg);
+}
+
+.section3 h3 {
+  /*para centrar el texto horizontalmente*/
+  text-align: center;
+
+  /*para centrar el texto verticalmente, pero los pixeles tienen que ser igual 
+  al definido en el height del contenedor*/
+  line-height: 600px;
+
+  /*para centrar el h2 utilizamos la funcion calc. el primer valor es la mitad del contenedor padre
+  que tiene 100vh y el segundo valor es la mitad de su height que es de 100px
+  y el segundo valor */
+  margin-top: calc(50vh - 300px);
+}
