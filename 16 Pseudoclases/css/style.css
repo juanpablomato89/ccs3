@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*La pseudoclase visited se utiliza en los elementos a que han sido visitados*/
+.enlace:visited {
+  color: black;
+}
+
+.enlace {
+  display: block;
+  background: tomato;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 3px solid #ebd1db;
+}
+
+/*para utilizar la seudoclase se utiliza a partir de uso de dos puntos y luego se elige la pseudoclase
+que deseemos
+En este caso la pseudoclase link es para los elementos a que no han sido visitados
+*/
+.enlace:link {
+  background: burlywood;
+}
+
+/*selecciona el elemento sobre el que estamos pasando el mouse*/
+.enlace:hover {
+  background: crimson;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 40px 20px;
+  transition: 0.3s;
+}
+
+/*Selecciona el elemento mientras hacemos click */
+.enlace:active {
+  background: steelblue;
+  color: white;
+}
