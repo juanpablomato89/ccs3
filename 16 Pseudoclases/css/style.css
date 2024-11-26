@@ -1,3 +1,8 @@
+/*Selecciona a la raiz de nuestro documento html*/
+:root {
+  background: steelblue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,4 +44,94 @@ En este caso la pseudoclase link es para los elementos a que no han sido visitad
 .enlace:active {
   background: steelblue;
   color: white;
+}
+
+.event {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20px;
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.event:active {
+  padding: 23px;
+}
+
+/*pseudoclase Target selecciona el elemento que ha sido apuntado o targetiado por medio
+de un hash(#) en la url*/
+#objetivo:target {
+  margin-left: 150px;
+}
+
+#objetivo {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
+  background: steelblue;
+  transition: 0.3s;
+}
+
+.form {
+  width: 80%;
+  margin: 30px auto;
+  background: #f2f2f2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.form_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*Esta pseudoclase selecciona un elemento que tenga a un hijo en el estado focus*/
+.form:focus-within {
+  background: darkcyan;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 5px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+/*La pseudoclase focus selecciona un elemento cuando esta ctivo en el,
+se utiliza por lo general en los input o elementos editables que se le active el cursor*/
+input:focus {
+  background: rgba(220, 20, 60, 0.518);
+}
+
+/*pseudoclase para los checkbox y radiobuttons cuando se hace click encima de ellos*/
+input[type="checkbox"]:checked + label {
+  background: crimson;
+  color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*Pseudoclase de negacion, en este caso se le esta aplicando un color a todos los h3
+que no tengan la clase title*/
+h3:not(.title) {
+  color: crimson;
 }

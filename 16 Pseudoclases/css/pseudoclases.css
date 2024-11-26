@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box {
+  display: block;
+  background: steelblue;
+  width: 55px;
+  height: 55px;
+  margin: 10px 0;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  margin-left: -5px;
+  padding: 10px 0;
+  border: 3px solid lightcoral;
+}
+
+/*Practica Filtrar elementos de acuerdo a su tipo*/
+
+/*Pseudoclase que selecciona elementos que son unicos en su seccion o en su padre*/
+/*div:only-of-type {
+  background: tomato;
+}*/
+
+/*Pseudoclase que selecciona al primer elemento de su tipo que este dentro del contenedor*/
+/*.box:first-of-type {
+  background: saddlebrown;
+}*/
+
+/*Pseudoclase que selecciona al ultimo elemento de su tipo que este dentro del contenedor*/
+/*.box:last-of-type {
+  background: darkgoldenrod;
+}*/
+
+/*Pseudoclase que permite elegir que elemento se va a seleccionar, dentro de los parentesis
+se pone un numero que seria el elemento que se va a seleccionar dentro del contenedor*/
+/*.box:nth-of-type(2) {
+  background: tomato;
+}*/
+
+/*Va a seleccionar los elementos de abajo hacia arriba*/
+.box:nth-last-of-type(2n) {
+  background: tomato;
+}
