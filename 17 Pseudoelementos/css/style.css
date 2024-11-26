@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: salmon;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  width: 300px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: -20px -20px 0px 0px #fb968b;
+  border-radius: 10px;
+}
+
+.card_title {
+  border-bottom: 3px solid salmon;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+
+/*Pseudoelemento selection, permite modificar la manera en que se selecionan los elementos*/
+p::selection {
+  background: crimson;
+  color: white;
+}
+
+/*permite modificar la primera linea de un parrafo*/
+p::first-line {
+  color: crimson;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*permite modificar la primera letra de un parrafo*/
+p::first-letter {
+  color: steelblue;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  margin-left: 20px;
+  padding: 15px 3px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-bottom: 4px solid white;
+  outline: none;
+}
+
+/*Modifica el placeholder del input*/
+input[type="text"]::placeholder {
+  color: white;
+}
