@@ -47,11 +47,26 @@ body {
 
 /*Pseudoclase que permite elegir que elemento se va a seleccionar, dentro de los parentesis
 se pone un numero que seria el elemento que se va a seleccionar dentro del contenedor*/
-/*.box:nth-of-type(2) {
+/*.box:nth-of-type(n) {
   background: tomato;
 }*/
 
 /*Va a seleccionar los elementos de abajo hacia arriba*/
-.box:nth-last-of-type(2n) {
+/*.box:nth-last-of-type(2n) {
   background: tomato;
-}
+}*/
+
+/*Pseudoclase selecciona a los elementos que son hijos unicos, que no tengan hermanos*/
+/*.box:only-child {
+  background: tomato;
+}*/
+
+/*selecciona al primer hijo de su contenedor*/
+/*.box:first-child {
+  background: tomato;
+}*/
+
+/*Selecciona al ultimo hijo del contenedor*/
+/*.box:last-child {
+  background: tomato;
+}*/
