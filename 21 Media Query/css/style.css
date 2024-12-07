@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: monospace;
+}
+
+.title {
+  font-size: 3rem;
+  color: crimson;
+  margin: 40px 0;
+  text-align: center;
+}
+
+/*De esta manera se declara una media query cuando el alto es mas grande que el ancho
+o mejor dicho, cuando la posicion de la pantalla es vertical*/
+@media screen and (orientation: portrait) {
+}
+
+/*De esta manera se declara una media query cuando el ancho es mas grande que el alto
+o mejor dicho, cuando la posicion de la pantalla es horizontal*/
+@media screen and (orientation: landscape) {
+}
+
+/*en este caso se debe cumplir las condiciones de que sea una pantalla(screen), la horientazion 
+sea vertical(portrait) y que el ancho minimo sea de 700px*/
+@media screen and (orientation: portrait) and (max-width: 600px) {
+}
+
+/*en este caso se debe cumplir las condiciones de que sea una pantalla(screen), y que el ancho maximo sea
+menor o igual que 400px o que el ancho maximo sea de 900px
+
+Otro detalle a resaltar es que en css el and se declara con and y el or con una coma.
+*/
+@media screen and (max-width: 400px), (min-width: 900px) {
+}
