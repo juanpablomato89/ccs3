@@ -1,0 +1,77 @@
+:root {
+  --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient1: linear-gradient(135deg, #667eea86 0%, #764ba286 100%);
+  --url-image: url("../img/img1.jpg");
+  --shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+  --width: 100%;
+  --radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: var(--gradient1), var(--url-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.form {
+  width: 400px;
+  background: white;
+  margin: 70px auto;
+  padding: 30px 20px 40px;
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.input {
+  width: var(--width);
+  padding: 20px 5px;
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #b39b9b;
+  outline: none;
+}
+
+.input,
+.form-submit {
+  font-family: inherit;
+}
+
+.fomr-title {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.form-message {
+  max-width: var(--width);
+  min-width: var(--width);
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.form-submit {
+  display: block;
+  width: var(--width);
+  font-size: 18px;
+  background-image: var(--gradient);
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-image: var(--gradient);
+  transition: background-image 1s;
+}
