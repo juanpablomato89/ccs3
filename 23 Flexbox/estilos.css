@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  height: 600px;
+  outline: 2px solid #000;
+  margin: 30px auto;
+
+  display: flex;
+  align-items: flex-start;
+
+  /*La propiedad flex-direction puede tener los valores ( row / row-reverse o 
+  column / column-reverse
+  esta propiedad define cual va a ser el eje principal*/
+  flex-direction: row;
+
+  /*Define el comportamiento de los Items cuando su tamano revasa el ancho del main-axis*/
+  /*flex-wrap: wrap;*/
+
+  /*Es el short hands de la propiedad flex-direction y flex wrap
+  flex-flow: direction wrap;
+  */
+  flex-flow: row wrap;
+
+  /*La alineacion se utiliza para repartir el espacio sobrante entre los elementos*/
+
+  /*justify-content: flex-start; alinea a los items al inicio del main axis*/
+
+  /*justify-content: flex-end; alinea a los items al final del main axis*/
+
+  /*justify-content: center; alinea a los items al centro del main axis*/
+
+  /*justify-content: space-between; lo que hace es distribuir equitativamente los espacios entre los items
+  pero el primer item y el ultimo se pegan a los bordes del contenedor*/
+
+  /*justify-content: space-around; lo que hace es distribuir equitativamente los espacios entre los items
+  pero no pega los elementos a las esquinas*/
+
+  /*justify-content: space-evenly; lo que hace es distribuir equitativamente los espacios entre los items
+  hacia todos los lados*/
+
+  /*justify-content: space-evenly;*/
+
+  /*align-items se utiliza para distribuir el espacio disponible en el cross axis, siempre y cuando
+  los items no tengan definido un height*/
+
+  align-items: center;
+
+  /*otra propiedad que se utiliza para alinear los elementos en el cross axis solo es valida utilizarla 
+  cuando el flex-wrap:wrap; y se desbordan los elementos,
+  y el comportamiento de los valores es el mismo que el de la propiedad justify-content*/
+  /*align-content: space-evenly;*/
+}
+
+.item {
+  --height: 90px;
+  background: tomato;
+  width: 90px;
+  height: var(--height);
+  line-height: var(--height);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+
+  /*Es el factor de crecimiento, determina que tanto crece un elemento(items) con respecto a otro, distribuye
+  el espacio sobrante entre los flex-items
+  se aplica en el main axis*/
+  flex-grow: 1;
+
+  /*flex-shrink determina cuanto se encoge un elemento con respecto a otro, esto pasa cuando se distribuye
+  el espacio faltante
+  Siempre que tenga un valor positivo, los elementos se encogeran para no desbordar el contenedor
+  se aplica en el main axis*/
+  flex-shrink: 1;
+
+  /*flex-basis representa el tamano base antes de que se distribuya el espacio disponible o el espacio
+  faltante y predomina al width o height
+  se aplica en el main axis*/
+  /*flex-basis: 60px;*/
+
+  /*flex es el short hands de flex-grow, flex-shrink, flex-basis
+  flex: grow shrink basis*/
+  flex: 1 1 0;
+
+  /*align-self alinea a un elemento en especifico a partir del cross axis*/
+  /*align-self: ;*/
+
+  /*gap agrega espaciado dinamicamente entre los items dependiendo de si estamos en columna o en fila*/
+  gap: 20px;
+}
+
+/*Para los flex-items existe una propiedad llamada order que se utiliza para ordenar los elementos
+por defecto todos los items tienen un order:0, los items se ordenan de menor a mayor, por lo tanto
+los items con un valor mas grande que la propiedad order se pone despues de un items que tenga un
+order mas quepeno */
+.item1 {
+  order: 3;
+}
+
+.item2 {
+  order: 1;
+  background: darkslateblue;
+}
+
+.item3 {
+  order: 4;
+  background: crimson;
+}
+
+.item4 {
+  order: 2;
+  background: steelblue;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-flow: column wrap;
+  }
+
+  .item4 {
+    order: -1;
+  }
+}
