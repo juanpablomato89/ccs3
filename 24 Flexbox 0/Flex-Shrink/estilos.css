@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  max-width: 600px;
+  height: 600px;
+  outline: 2px solid #000;
+  margin: 30px auto;
+
+  display: flex;
+}
+
+.item {
+  --height: 80px;
+  background: tomato;
+  width: 150px;
+  height: var(--height);
+  line-height: var(--height);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  flex-shrink: 1;
+
+  /*flex-shrink, es una propiedad que afecta solo el main axis,
+  esta propiedad determina que tanto se encoge un elemento con respecto a otro
+  y esto pasa cuando se distribuye el espacio faltante, por defecto el factor de
+  encogimiento es igual a 1*/
+}
+
+.item1 {
+  /*cuando el valor es 1 el elemento no se encoge, por lo tanto
+  el espacio faltante se distribuye entre el resto de los flex-itemscalc */
+  flex-shrink: 0;
+}
+
+.item2 {
+  background: darkslateblue;
+  flex-shrink: 3;
+}
+
+.item3 {
+  background: crimson;
+  flex-shrink: 4;
+}
+
+.item4 {
+  background: steelblue;
+}

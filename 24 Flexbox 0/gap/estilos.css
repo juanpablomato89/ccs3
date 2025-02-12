@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.links {
+  margin: 20px;
+  padding: 20px;
+  display: inline-flex;
+  background: steelblue;
+  flex-direction: row;
+  /*adiciona espaciado entre los elementos*/
+  gap: 20px;
+}
+
+.link {
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: steelblue;
+}

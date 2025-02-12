@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  max-width: 600px;
+  height: 600px;
+  outline: 2px solid #000;
+  margin: 30px auto;
+
+  display: flex;
+}
+
+.item {
+  --height: 80px;
+  background: tomato;
+  width: 180px;
+  height: var(--height);
+  line-height: var(--height);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  /*flex: grow shrink basis ;
+  Flex es el short-hands para incluye a flex-grow, flex-shrink y flex-basis*/
+  flex: 1 2 auto;
+}
+
+.item1 {
+}
+
+.item2 {
+  background: darkslateblue;
+}
+
+.item3 {
+  background: crimson;
+}
+
+.item4 {
+  background: steelblue;
+}

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  max-width: 600px;
+  height: 600px;
+  outline: 2px solid #000;
+  margin: 30px auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  --height: 90px;
+  background: tomato;
+  width: 80px;
+  height: var(--height);
+  line-height: var(--height);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+/*La propiedad order solo se aplica a los flex-items y se emplea de menor a mayor
+es decir contra mas pequeno es el order el elemento se ubica primero, se 
+emplea solo en los flex-items
+*/
+
+.item1 {
+  order: 4;
+}
+
+.item2 {
+  order: 3;
+  background: darkslateblue;
+}
+
+.item3 {
+  order: 1;
+  background: crimson;
+}
+
+.item4 {
+  order: 2;
+  background: steelblue;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .item4 {
+    order: -1;
+  }
+}

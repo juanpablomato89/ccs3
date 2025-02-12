@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  max-width: 600px;
+  height: 600px;
+  outline: 2px solid #000;
+  margin: 30px auto;
+
+  display: flex;
+}
+
+.item {
+  --height: 80px;
+  background: tomato;
+  width: 50px;
+  height: var(--height);
+  line-height: var(--height);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+
+  /*
+  flex-grow o factor de crecimiento, es una propiedad que se utiliza directamente en los items*,
+  por defecto su valor es 0, distribuye entre los flex-items el espacio sobrante,
+  por defecto su valor es cero*/
+  flex-grow: 1;
+}
+
+.item1 {
+}
+
+.item2 {
+  background: darkslateblue;
+}
+
+.item3 {
+  background: crimson;
+  flex-grow: 3;
+}
+
+.item4 {
+  background: steelblue;
+  flex-grow: 4;
+}

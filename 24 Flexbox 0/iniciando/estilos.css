@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 450px;
+  max-width: 600px;
+  height: 600px;
+  outline: 2px solid #000;
+  margin: 30px auto;
+
+  display: flex;
+
+  /*flex-direction: [column| column-reverse] | [row | row-reverse];*/
+  /*flex-direction: column;*/
+
+  /* flex-wrap: initial inherit nowrap wrap wrap-reverse unset;
+ Define el comportamiento de los Items cuando tu tamano sumado revasa el tamano del main axis
+ */
+  /*flex-wrap: wrap;*/
+
+  /*flex-flow: direction wrap ; es el short-hands de flex-direction y flex-wrap
+  en su primer valor se pone la direccion y en el segundo wrap*/
+  flex-flow: column wrap;
+}
+
+.item {
+  --height: 90px;
+  background: tomato;
+  width: 90px;
+  height: var(--height);
+  line-height: var(--height);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+.item1 {
+}
+
+.item2 {
+  background: darkslateblue;
+}
+
+.item3 {
+  background: crimson;
+}
+
+.item4 {
+  background: steelblue;
+}
