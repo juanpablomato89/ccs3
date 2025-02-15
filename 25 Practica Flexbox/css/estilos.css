@@ -70,3 +70,20 @@ body {
   border-radius: 40px;
   padding: 20px 0;
 }
+
+@media screen and (max-width: 800px) {
+  .card {
+    background: #fff;
+  }
+
+  .card__item {
+    margin: 40px 0;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card__item {
+    width: 90%;
+  }
+}
