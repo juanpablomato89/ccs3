@@ -15,13 +15,24 @@ body {
 
 .container {
   width: 90%;
-  outline: 1px solid red;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   overflow: hidden;
   margin: 0 auto;
+  padding: var(--padding-container);
+  border: 3px solid red;
 }
 
+/* hero section */
 .hero {
+  --padding-container: 0;
   height: 100vh;
   background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+.hero__main {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
 }
