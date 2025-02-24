@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+  /*outline: 3px solid red;*/
+}
+
 :root {
   --padding-container: 80px 0;
   --color-primary: #f77062;
@@ -15,11 +19,10 @@ body {
 
 .container {
   width: 90%;
-  /*max-width: 1200px;*/
+  max-width: 1200px;
   overflow: hidden;
   margin: 0 auto;
   padding: var(--padding-container);
-  border: 3px solid red;
 }
 
 /* hero section */
@@ -35,4 +38,28 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
+}
+
+.hero__img {
+  width: 45%;
+  text-align: center;
+  margin: 0;
+}
+
+.hero__picture {
+  width: 80%;
+}
+
+.hero__texts {
+  width: 45%;
+  color: white;
+}
+
+.hero__title {
+  font-size: 4rem;
+}
+
+.hero__copy {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
